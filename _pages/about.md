@@ -37,8 +37,8 @@ latest_posts:
     <div class="timeline-content">
       <div class="timeline-header">
         <div class="timeline-title">
-          <strong>学士学位 · 计算机科学与技术</strong>
-          <span class="timeline-sub">北京邮电大学 · 计算机学院</span>
+          <strong>北京邮电大学 · 计算机学院</strong>
+          <span class="timeline-sub">学士学位 · 计算机科学与技术</span>
         </div>
         <div class="timeline-date">2020.09 – 2024.07</div>
       </div>
@@ -52,8 +52,8 @@ latest_posts:
     <div class="timeline-content">
       <div class="timeline-header">
         <div class="timeline-title">
-          <strong>硕士学位（预计） · 计算机科学</strong>
-          <span class="timeline-sub">新加坡国立大学 · 计算机学院</span>
+          <strong>新加坡国立大学 · 计算机学院</strong>
+          <span class="timeline-sub">硕士学位（预计） · 计算机科学</span>
         </div>
         <div class="timeline-date">2024.08 – 2026.02</div>
       </div>
