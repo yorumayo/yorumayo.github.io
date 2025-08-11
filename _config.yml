@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Wang Ziyang # the website title (if blank, full name will be used instead)
+title: 汪子扬 # the website title (if blank, full name will be used instead)
 first_name: Ziyang
 # middle_name: R.
 last_name: Wang
@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: video generation, large language models, computer vision, deep learning # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: cn # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://yorumayo.github.io # the base hostname & protocol for your site
