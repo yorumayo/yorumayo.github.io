@@ -1454,32 +1454,145 @@ figure.cover {
   }
 }
 
-.edu-item {
+/* --- LinkedIn-like Timeline for Education --- */
+.timeline {
+  position: relative;
+  margin: 0.8rem auto 1.2rem;
+  max-width: 980px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 38px;                     /* 竖线位置，配合 logo 宽度 */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--global-divider-color);
+  opacity: .8;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 76px 1fr; /* 左列 logo，右列内容 */
+  gap: 16px;
+  padding: 14px 16px;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.04);
+  margin: 14px 0 18px 0;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  border-color: color-mix(in oklab, var(--global-theme-color) 24%, var(--global-divider-color));
+}
+
+/* 圆点 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 31px;                 /* 与竖线对齐 */
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--global-card-bg-color);
+  border: 2px solid var(--global-theme-color);
+  box-shadow: 0 0 0 3px var(--global-card-bg-color);
+}
+
+/* 左侧校徽 */
+.timeline-logo {
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timeline-logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;     /* 保持比例不变形 */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* 右侧内容头部：标题 + 时间右对齐 */
+.timeline-header {
+  display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0.6rem 0;
-  border-bottom: 1px dashed var(--global-divider-color);
+  gap: 16px;
+  flex-wrap: wrap;          /* 小屏换行 */
 }
 
-.edu-left {
-  max-width: 75%;
+.timeline-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.edu-degree {
-  font-weight: 700;
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
+.timeline-title strong {
+  font-size: 1.04rem;
+  font-weight: 750;
 }
 
-.edu-school {
-  font-size: 0.95rem;
+.timeline-sub {
+  font-size: 0.94rem;
   color: var(--global-text-color-light);
 }
 
-.edu-right {
+.timeline-date {
   font-size: 0.9rem;
-  font-weight: 500;
   color: var(--global-text-color-light);
-  white-space: nowrap;
+  white-space: nowrap;      /* 始终靠右，且不换行 */
+  font-variant-numeric: tabular-nums; /* 时间等宽更整齐 */
+}
+
+/* Education 专用微调（可选） */
+.edu-timeline .timeline-item {
+  padding: 16px 18px;
+}
+
+/* 响应式 */
+@media (max-width: 576px) {
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 60px 1fr;
+    border-radius: 12px;
+  }
+
+  .timeline-item::before {
+    left: 25px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+
+  .timeline-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .timeline-date {
+    font-size: 0.88rem;
+  }
 }

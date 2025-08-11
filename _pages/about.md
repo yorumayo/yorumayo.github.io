@@ -28,22 +28,39 @@ latest_posts:
 ---
 
 ## 🎓 教育背景
-<div class="edu-item">
-  <div class="edu-left">
-    <div class="edu-degree">学士学位 · 计算机科学与技术</div>
-    <div class="edu-school">北京邮电大学 · 计算机学院</div>
-  </div>
-  <div class="edu-right">2020.09 – 2024.07</div>
-</div>
+<div class="timeline edu-timeline">
 
-<div class="edu-item">
-  <div class="edu-left">
-    <div class="edu-degree">硕士学位（预计）· 计算机科学</div>
-    <div class="edu-school">新加坡国立大学 · 计算机学院</div>
+  <div class="timeline-item">
+    <div class="timeline-logo">
+      <img src="/assets/img/logos/bupt_logo_271.png" alt="BUPT">
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <div class="timeline-title">
+          <strong>学士学位 · 计算机科学与技术</strong>
+          <span class="timeline-sub">北京邮电大学 · 计算机学院</span>
+        </div>
+        <div class="timeline-date">2020.09 – 2024.07</div>
+      </div>
+    </div>
   </div>
-  <div class="edu-right">2024.08 – 2026.02</div>
-</div>
 
+  <div class="timeline-item">
+    <div class="timeline-logo">
+      <img src="/assets/img/logos/nus_logo_256.png" alt="NUS">
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <div class="timeline-title">
+          <strong>硕士学位（预计） · 计算机科学</strong>
+          <span class="timeline-sub">新加坡国立大学 · 计算机学院</span>
+        </div>
+        <div class="timeline-date">2024.08 – 2026.02</div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 ## 🔍 研究方向
