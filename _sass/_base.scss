@@ -1453,3 +1453,33 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed var(--global-divider-color);
+}
+
+.edu-left {
+  max-width: 75%;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.edu-school {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+}
+
+.edu-right {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 计算机硕士在读. National University of Singapore (新加坡国立大学). 邮箱 wangziyang@u.nus.edu
+subtitle: 计算机硕士在读. 新加坡国立大学. wangziyang@u.nus.edu
 
 profile:
   align: right
@@ -27,26 +27,33 @@ latest_posts:
   limit: blank # leave blank to include all the blog posts
 ---
 
-## 教育背景
-**学士学位 · 计算机科学与技术**  
-北京邮电大学 · 计算机学院  
-2020.09 – 2024.07  
+## 🎓 教育背景
+<div class="edu-item">
+  <div class="edu-left">
+    <div class="edu-degree">学士学位 · 计算机科学与技术</div>
+    <div class="edu-school">北京邮电大学 · 计算机学院</div>
+  </div>
+  <div class="edu-right">2020.09 – 2024.07</div>
+</div>
 
-**硕士学位（预计）· 计算机科学**  
-新加坡国立大学 · 计算机学院  
-2024.08 – 2026.02  
+<div class="edu-item">
+  <div class="edu-left">
+    <div class="edu-degree">硕士学位（预计）· 计算机科学</div>
+    <div class="edu-school">新加坡国立大学 · 计算机学院</div>
+  </div>
+  <div class="edu-right">2024.08 – 2026.02</div>
+</div>
 
----
 
-## 研究方向
-- 可控视频生成
+
+## 🔍 研究方向
+- DIT架构可控视频生成
   - 类 ControlNet 架构的控制方法
   - Training-free 控制方法
   - LoRA 控制方法
 
----
 
-## 实习经历
+## 💼 实习经历
 **计算机视觉实习生**  
 COWA Robot 酷哇科技有限公司（上海研发中心）  
 参与计算机视觉与机器人相关研发项目
