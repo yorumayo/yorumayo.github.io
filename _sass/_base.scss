@@ -1477,7 +1477,7 @@ figure.cover {
   display: grid;
   grid-template-columns: 76px 1fr; /* 左列 logo，右列内容 */
   gap: 16px;
-  padding: 14px 16px;
+  padding: 14px 16px 14px 56px;
   background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 14px;
@@ -1572,7 +1572,6 @@ figure.cover {
   .timeline-item {
     grid-template-columns: 60px 1fr;
     border-radius: 12px;
-    padding-left: 20px;
   }
 
   .timeline-item::before {
