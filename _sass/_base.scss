@@ -1572,6 +1572,7 @@ figure.cover {
   .timeline-item {
     grid-template-columns: 60px 1fr;
     border-radius: 12px;
+    padding-left: 20px;
   }
 
   .timeline-item::before {
