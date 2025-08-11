@@ -4,6 +4,36 @@
 
 // Typography
 
+
+html {
+  font-size: 16.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI",
+    Roboto, Helvetica, Arial, "Noto Sans CJK SC", "Noto Sans SC",
+    "Source Han Sans SC", "Liberation Sans", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+
+h1 { font-size: 2rem;   font-weight: 800; margin: 1.2rem 0 0.8rem; }
+h2 { font-size: 1.5rem; font-weight: 700; margin: 1.1rem 0 0.7rem; }
+h3 { font-size: 1.25rem; font-weight: 650; margin: 1rem   0 0.6rem; }
+
+p, li { line-height: 1.8; }
+p { margin: 0.6rem 0 0.9rem; }
+
+code, pre, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+
 p,
 h1,
 h2,

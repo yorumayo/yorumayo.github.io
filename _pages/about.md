@@ -27,18 +27,29 @@ latest_posts:
   limit: blank # leave blank to include all the blog posts
 ---
 
-- 本科：北京邮电大学
-  - 2020.9 - 2024.7
-  - 计算机科学与技术专业 | 计算机学院
-- 研究生： 新加坡国立大学
-  - 2024.8 - 2026.2 (预计)
-  - 计算机科学专业 | 计算机学院
+## 教育背景
+**学士学位 · 计算机科学与技术**  
+北京邮电大学 · 计算机学院  
+2020.09 – 2024.07  
 
-研究方向： 
-- 可控视频生成：类ControlNet架构控制方法；Training-free控制方法；Lora控制方法
+**硕士学位（预计）· 计算机科学**  
+新加坡国立大学 · 计算机学院  
+2024.08 – 2026.02  
 
-实习经历：
-- COWA Robot 酷哇科技有限公司上海研发中心
+---
+
+## 研究方向
+- 可控视频生成
+  - 类 ControlNet 架构的控制方法
+  - Training-free 控制方法
+  - LoRA 控制方法
+
+---
+
+## 实习经历
+**计算机视觉实习生**  
+COWA Robot 酷哇科技有限公司（上海研发中心）  
+参与计算机视觉与机器人相关研发项目
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
