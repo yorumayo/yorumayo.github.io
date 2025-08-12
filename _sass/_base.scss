@@ -1504,7 +1504,7 @@ figure.cover {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: calc(var(--tl-line-x) - var(--tl-item-pad));
+  left: var(--tl-item-pad);
   top: 22px;
   width: var(--tl-dot-size);
   height: var(--tl-dot-size);
@@ -1548,9 +1548,11 @@ figure.cover {
 .timeline-sub  { font-size: 0.9rem; color: var(--global-text-color-light); }
 .timeline-date {
   white-space: nowrap;
+  font-size: 1.04rem;
   font-variant-numeric: tabular-nums;
-  font-weight: 600; /* 比默认粗一些 */
-  color: var(--global-text-color); /* 用正文色，而不是浅色 */
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--global-theme-color); /* 主题色下划线 */
 }
 
 /* 小屏优化 */
