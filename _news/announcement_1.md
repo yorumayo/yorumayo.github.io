@@ -7,6 +7,6 @@ related_posts: false
 
 A simple inline announcement.
 <video width="640" height="360" controls>
-  <source src="/assets/videos/demo.mp4" type="video/mp4">
+  <source src="/assets/video/250808_30s_webvideo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
