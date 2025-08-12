@@ -32,7 +32,7 @@ latest_posts:
 
   <div class="timeline-item">
     <div class="timeline-logo">
-      <img src="/assets/img/logos/bupt_logo_271.png" alt="BUPT">
+      <img src="/assets/img/logos/nus_logo_256.png" alt="NUS">
     </div>
     <div class="timeline-content">
       <div class="timeline-header">
@@ -47,7 +47,7 @@ latest_posts:
 
   <div class="timeline-item">
     <div class="timeline-logo">
-      <img src="/assets/img/logos/nus_logo_256.png" alt="NUS">
+      <img src="/assets/img/logos/bupt_logo_271.png" alt="BUPT">
     </div>
     <div class="timeline-content">
       <div class="timeline-header">
