@@ -1545,8 +1545,13 @@ figure.cover {
 }
 .timeline-title { display: flex; flex-direction: column; gap: 2px; }
 .timeline-title strong { font-size: 1.04rem; font-weight: 750; }
-.timeline-sub, .timeline-date { font-size: 0.9rem; color: var(--global-text-color-light); }
-.timeline-date { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.timeline-sub  { font-size: 0.9rem; color: var(--global-text-color-light); }
+.timeline-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600; /* 比默认粗一些 */
+  color: var(--global-text-color); /* 用正文色，而不是浅色 */
+}
 
 /* 小屏优化 */
 @media (max-width: 576px) {
