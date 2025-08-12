@@ -1459,7 +1459,7 @@ figure.cover {
   --tl-col-w: 116px;         /* 左列（logo）宽度：由 76 提高到 112，留出余量 */
   --tl-gap: 20px;            /* 左右两列间距 */
   --tl-item-pad: 16px;       /* 卡片内边距（四周一致即可） */
-  --tl-line-x: 32px;         /* 竖线与圆点的 X 坐标（相对卡片左边） */
+  --tl-line-x: 28px;         /* 竖线与圆点的 X 坐标（相对卡片左边） */
   --tl-dot-size: 14px;
 }
 
@@ -1504,7 +1504,7 @@ figure.cover {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: calc(var(--tl-line-x) - var(--tl-item-pad));
+  // left: calc(var(--tl-line-x) - var(--tl-item-pad));
   top: 22px;
   width: var(--tl-dot-size);
   height: var(--tl-dot-size);
