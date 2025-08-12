@@ -65,7 +65,7 @@ latest_posts:
 ## 🔍 研究方向
 - DIT架构可控视频生成
   - 类 ControlNet 架构的控制方法
-  - Training-free 控制方法
+  - Training-free 控制方法 (如Attention editing)
   - LoRA 控制方法
 
 

@@ -1504,7 +1504,7 @@ figure.cover {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: var(--tl-line-x);
+  left: calc(var(--tl-line-x) - var(--tl-item-pad));
   top: 22px;
   width: var(--tl-dot-size);
   height: var(--tl-dot-size);
