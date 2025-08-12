@@ -68,6 +68,7 @@ latest_posts:
   - Training-free 控制方法 (如Attention editing)
   - LoRA 控制方法
 
+---
 
 ## 💼 实习经历
 **计算机视觉实习生**  
