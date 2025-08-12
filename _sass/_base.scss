@@ -1456,7 +1456,7 @@ figure.cover {
 
 /* 可调变量：一处调全局 */
 :root {
-  --tl-col-w: 120px;         /* 左列（logo）宽度：由 76 提高到 112，留出余量 */
+  --tl-col-w: 116px;         /* 左列（logo）宽度：由 76 提高到 112，留出余量 */
   --tl-gap: 20px;            /* 左右两列间距 */
   --tl-item-pad: 16px;       /* 卡片内边距（四周一致即可） */
   --tl-line-x: 28px;         /* 竖线与圆点的 X 坐标（相对卡片左边） */
@@ -1525,8 +1525,7 @@ figure.cover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* remove: margin-left */
-  justify-self: start;   /* 可改成 center 看喜好 */
+  justify-self: end;   /* 可改成 center 看喜好 */
   align-self: center;
 }
 .timeline-logo img {
