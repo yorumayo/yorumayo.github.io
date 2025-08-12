@@ -440,16 +440,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-your-browser-does-not-support-the-video-tag",
-          title: 'A simple inline announcement.       Your browser does not support the video tag.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-酷哇-独立实现30s长度视频的-重绘-工作-验证并提供了长序列机械臂动作数据生成的思路-smile-左为网络视频-右为对应更改场景和主体的生成视频-your-browser-does-not-support-the-video-tag",
+          title: '@酷哇. 独立实现30s长度视频的“重绘”工作，验证并提供了长序列机械臂动作数据生成的思路 :smile:    左为网络视频，右为对应更改场景和主体的生成视频        Your browser does not support the video tag.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
