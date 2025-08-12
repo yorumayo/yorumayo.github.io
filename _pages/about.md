@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 计算机硕士在读. 新加坡国立大学. wangziyang@u.nus.edu
+subtitle: 计算机硕士在读. 新加坡国立大学. wangziyang@u.nus.edu. 微信(同手机号码) 15311529761
 
 profile:
   align: right
