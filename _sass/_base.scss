@@ -1454,17 +1454,25 @@ figure.cover {
   }
 }
 
-/* --- LinkedIn-like Timeline for Education --- */
+/* 可调变量：一处调全局 */
+:root {
+  --tl-col-w: 112px;         /* 左列（logo）宽度：由 76 提高到 112，留出余量 */
+  --tl-gap: 20px;            /* 左右两列间距 */
+  --tl-item-pad: 16px;       /* 卡片内边距（四周一致即可） */
+  --tl-line-x: 28px;         /* 竖线与圆点的 X 坐标（相对卡片左边） */
+  --tl-dot-size: 14px;
+}
+
+/* 容器 & 竖线 */
 .timeline {
   position: relative;
   margin: 0.8rem auto 1.2rem;
   max-width: 980px;
 }
-
 .timeline::before {
   content: "";
   position: absolute;
-  left: 38px;                     /* 竖线位置，配合 logo 宽度 */
+  left: calc(var(--tl-line-x));   /* 与圆点对齐 */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -1472,12 +1480,13 @@ figure.cover {
   opacity: .8;
 }
 
+/* 卡片 */
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: 76px 1fr; /* 左列 logo，右列内容 */
-  gap: 16px;
-  padding: 14px 16px 14px 56px;
+  grid-template-columns: var(--tl-col-w) 1fr; /* 用更宽的左列代替 margin-left */
+  gap: var(--tl-gap);
+  padding: var(--tl-item-pad);
   background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 14px;
@@ -1485,28 +1494,27 @@ figure.cover {
   margin: 14px 0 18px 0;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
-
 .timeline-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0,0,0,.06);
   border-color: color-mix(in oklab, var(--global-theme-color) 24%, var(--global-divider-color));
 }
 
-/* 圆点 */
+/* 圆点：与竖线同一 X */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: 31px;                 /* 与竖线对齐 */
+  left: var(--tl-line-x);
   top: 22px;
-  width: 14px;
-  height: 14px;
+  width: var(--tl-dot-size);
+  height: var(--tl-dot-size);
   border-radius: 50%;
   background: var(--global-card-bg-color);
   border: 2px solid var(--global-theme-color);
   box-shadow: 0 0 0 3px var(--global-card-bg-color);
 }
 
-/* 左侧校徽 */
+/* 左侧校徽（去掉 margin-left，交给列宽 & gap 处理） */
 .timeline-logo {
   width: 76px;
   height: 76px;
@@ -1517,83 +1525,40 @@ figure.cover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-left: 20px;
+  /* remove: margin-left */
+  justify-self: start;   /* 可改成 center 看喜好 */
+  align-self: center;
 }
-
 .timeline-logo img {
   width: 64px;
   height: 64px;
-  object-fit: contain;     /* 保持比例不变形 */
+  object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* 右侧内容头部：标题 + 时间右对齐 */
+/* 右侧标题行 */
 .timeline-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: wrap;          /* 小屏换行 */
+  flex-wrap: wrap;
 }
+.timeline-title { display: flex; flex-direction: column; gap: 2px; }
+.timeline-title strong { font-size: 1.04rem; font-weight: 750; }
+.timeline-sub, .timeline-date { font-size: 0.9rem; color: var(--global-text-color-light); }
+.timeline-date { white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-.timeline-title {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.timeline-title strong {
-  font-size: 1.04rem;
-  font-weight: 750;
-}
-
-.timeline-sub {
-  font-size: 0.94rem;
-  color: var(--global-text-color-light);
-}
-
-.timeline-date {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-  white-space: nowrap;      /* 始终靠右，且不换行 */
-  font-variant-numeric: tabular-nums; /* 时间等宽更整齐 */
-}
-
-/* Education 专用微调（可选） */
-.edu-timeline .timeline-item {
-  padding: 16px 18px;
-}
-
-/* 响应式 */
+/* 小屏优化 */
 @media (max-width: 576px) {
-  .timeline::before {
-    left: 20px;
+  :root {
+    --tl-col-w: 88px;
+    --tl-gap: 16px;
+    --tl-line-x: 22px;
+    --tl-dot-size: 12px;
   }
-
-  .timeline-item {
-    grid-template-columns: 60px 1fr;
-    border-radius: 12px;
-  }
-
-  .timeline-item::before {
-    left: 25px;
-    top: 20px;
-    width: 12px;
-    height: 12px;
-  }
-
-  .timeline-logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-  }
-
-  .timeline-logo img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .timeline-date {
-    font-size: 0.88rem;
-  }
+  .timeline-item { border-radius: 12px; }
+  .timeline-logo { width: 60px; height: 60px; border-radius: 10px; }
+  .timeline-logo img { width: 50px; height: 50px; }
+  .timeline-date { font-size: 0.88rem; }
 }
