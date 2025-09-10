@@ -57,6 +57,7 @@
           </li>
 
           <!-- Other pages -->
+          {% comment %}
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
@@ -117,6 +118,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% endcomment %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

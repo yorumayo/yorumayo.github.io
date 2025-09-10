@@ -17,6 +17,8 @@ ninja.data = [
       window.location.href = "{{ '/' | relative_url }}";
     },
   },
+  // Other navigation pages - commented out to only show About
+  {% comment %}
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}
@@ -52,6 +54,7 @@ ninja.data = [
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  {% endcomment %}
   {%- if site.posts_in_search -%}
     {%- for post in site.posts -%}
       {

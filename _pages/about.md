@@ -4,16 +4,16 @@ title: about
 permalink: /
 subtitle: 计算机硕士在读. 新加坡国立大学. wangziyang@u.nus.edu. 微信(同手机号码) 15311529761
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+# profile:
+  # align: right
+  # image: prof_pic.jpg
+  # image_circular: false # crops the image to make it circular
   # more_info: >
     # <p>wangziyang@u.nus.edu</p>
     # <p>123 your address street</p>
     # <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
@@ -22,7 +22,7 @@ announcements:
   limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit:  # leave blank to include all the blog posts
 ---
